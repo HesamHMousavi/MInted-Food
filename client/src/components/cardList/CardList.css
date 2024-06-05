@@ -1,0 +1,40 @@
+.cardlist {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  background-color: #222;
+}
+.ops {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 200px;
+}
+.ops h1 {
+  color: rgb(117, 117, 117);
+}
+@media (max-width: 600px) and (min-width: 300px) {
+  .cardlist {
+    /* grid-template-columns: repeat(1, auto); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .cardlist > div {
+    width: 85%;
+    height: 450px;
+  }
+}
+@media (max-width: 900px) and (min-width: 600px) {
+  .cardlist {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 1150px) and (min-width: 900px) {
+  .cardlist {
+    grid-template-columns: repeat(3, auto);
+  }
+}

@@ -1,0 +1,16 @@
+form {
+  text-align: center;
+  background-color: #222;
+}
+@media (max-width: 600px) {
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  form h1 {
+    font-size: 2rem;
+  }
+}

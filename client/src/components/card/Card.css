@@ -1,0 +1,53 @@
+.card {
+  display: inline-block;
+  background-color: #000;
+  width: 250px;
+  height: 370px;
+  border-radius: 15px 15px 5px 5px;
+  margin: 20px;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 7px #000, -2px -2px 7px #000;
+}
+.card .con {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .stats {
+  padding: 0 1rem;
+}
+.card .stats > div {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(117, 117, 117);
+}
+.card p {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+.card:hover {
+  box-shadow: 1px 1px 5px #555, -1px -1px 5px #555;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 600px) and (min-width: 300px) {
+  .card .con {
+    height: 270px;
+  }
+  .card .stats > div {
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,29 @@
+.user-account {
+  padding: 1rem;
+  background-color: #222;
+}
+.one-btn {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.con {
+  width: 90%;
+}
+.one-btn button {
+  margin: 10px;
+}
+input {
+  width: 100%;
+}
+.label {
+  display: block;
+  color: var(--gray-color);
+  font-size: 12px;
+}
+input::-webkit-calendar-picker-indicator {
+  background-color: var(--light-blue-color);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}

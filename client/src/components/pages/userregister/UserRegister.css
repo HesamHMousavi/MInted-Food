@@ -1,0 +1,39 @@
+input {
+  margin: 5px 0 0 0;
+}
+.address::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.address::-webkit-scrollbar-thumb {
+  background-color: var(--gray-color);
+  border-radius: 20px;
+}
+.address::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+.address {
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 5px 0 0 0;
+  width: 300px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: #333;
+  box-shadow: var(--shadow-dark);
+  border-radius: 5px;
+}
+.address-item {
+  text-align: start;
+  border-bottom: solid 1px rgb(173, 173, 173);
+  padding: 10px;
+  color: rgb(173, 173, 173);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+.address-item:hover {
+  background-color: #444;
+}

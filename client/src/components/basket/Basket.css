@@ -1,0 +1,84 @@
+.basket {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background-color: #7400b8;
+  transition: all 0.3s ease;
+  color: #fff;
+  z-index: 2;
+}
+.main-content::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+.main-content::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.title {
+  height: 10%;
+  padding: 15px 0;
+  display: flex;
+  text-align: center;
+  width: 320px;
+  align-items: center;
+  background-color: #222;
+}
+.title h1 {
+  width: 100%;
+}
+.exit-btn {
+  zoom: 1.5;
+  padding: 0 0 0 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.exit-btn:hover {
+  color: #80ffdb;
+}
+.main-content {
+  padding: 0 10px;
+  height: 70%;
+  overflow: auto;
+}
+.check-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #222;
+  bottom: 0;
+  height: 20%;
+}
+.check-out h1 {
+  padding: 10px;
+}
+.check-out button {
+  padding: 5px 5px;
+}
+.no-orders {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.no-orders h1 {
+  letter-spacing: 3px;
+}
+@media (max-height: 500px) {
+  .title {
+    height: 20%;
+  }
+  .main-content {
+    height: 50%;
+  }
+  .check-out {
+    height: 30%;
+  }
+  .check-out h1 {
+    padding: 0;
+  }
+}

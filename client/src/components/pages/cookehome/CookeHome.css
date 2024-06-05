@@ -1,0 +1,22 @@
+.home {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  width: 95%;
+  margin: 0 auto;
+}
+.incoming-orders,
+.pending-orders {
+  background-color: #333;
+  margin: 1rem;
+  padding: 20px;
+  border-radius: 5px;
+}
+.head-con {
+  color: #aaa;
+  padding: 0 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--light-blue-color);
+}
